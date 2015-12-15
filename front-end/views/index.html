@@ -1,0 +1,117 @@
+<!doctype html>
+<html data-ng-app="ngAPI" ng-strict-di>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible", content="IE=edge"/>
+    <base href="/" />
+    <title> J.Ca </title>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width"/>
+
+    <style>
+        .ng-hide {
+          display: none!important;
+        }
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+          display: none !important;
+        }
+    </style>
+
+    <!-- build:css /css/vendor.css-->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/bower/angular-motion/dist/angular-motion.css" />
+    <link rel="stylesheet" href="/bower/angular-loading-bar/build/loading-bar.css" />
+    <link rel="stylesheet" href="/bower/toastr/toastr.css" />
+    <link rel="stylesheet" href="/bower/ionicons/css/ionicons.css" />
+    <link rel="stylesheet" href="/bower/videojs/dist/video-js/video-js.css" />
+    <link rel="stylesheet" href="/bower/flat-ui/dist/css/flat-ui.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css /css/app.css-->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/.tmp/stylus/app.css">
+    <!-- endinject -->
+    <!-- endbuild -->
+  </head>
+  <body>
+
+    <section ng-include="'commons/header.html'"></section>
+    <section id="content" class="ui-view-container" >
+      <div data-ng-controller="Shell as vm" ng-cloak>
+        <div ui-view></div>
+      </div>
+    </section>
+
+    <!--stripe initialization-->
+    <script src="https://js.stripe.com/v2/"></script>
+    <!-- build:js /js/vendor.js-->
+    <!-- bower:js -->
+    <script src="/bower/jquery/dist/jquery.js"></script>
+    <script src="/bower/angular/angular.js"></script>
+    <script src="/bower/angular-animate/angular-animate.js"></script>
+    <script src="/bower/angular-strap/dist/angular-strap.js"></script>
+    <script src="/bower/angular-strap/dist/angular-strap.tpl.js"></script>
+    <script src="/bower/angular-loading-bar/build/loading-bar.js"></script>
+    <script src="/bower/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="/bower/angular-stripe/release/angular-stripe.js"></script>
+    <script src="/bower/lodash/dist/lodash.compat.js"></script>
+    <script src="/bower/restangular/dist/restangular.js"></script>
+    <script src="/bower/satellizer/satellizer.js"></script>
+    <script src="/bower/toastr/toastr.js"></script>
+    <script src="/bower/videojs/dist/video-js/video.js"></script>
+    <script src="/bower/flat-ui/dist/js/flat-ui.js"></script>
+    <!-- endbower -->
+    <!-- endbuild-->
+
+    <!-- build:js /js/app.js-->
+    <!-- inject:js -->
+    <script src="/js/core/core.module.js"></script>
+    <script src="/js/exception/exception.module.js"></script>
+    <script src="/js/layout/layout.module.js"></script>
+    <script src="/js/logger/logger.module.js"></script>
+    <script src="/js/promise/promise.module.js"></script>
+    <script src="/js/promise-request/request.module.js"></script>
+    <script src="/js/router/router.module.js"></script>
+    <script src="/js/services/services.module.js"></script>
+    <script src="/js/widgets/widgets.module.js"></script>
+    <script src="/js/routes/client/main/main.module.js"></script>
+    <script src="/js/routes/client/stripe/module.js"></script>
+    <script src="/js/routes/client/user.login/login.module.js"></script>
+    <script src="/js/routes/client/user.signup/signup.module.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/constants/constants.js"></script>
+    <script src="/js/core/config.js"></script>
+    <script src="/js/core/constants.js"></script>
+    <script src="/js/exception/exception-handler.provider.js"></script>
+    <script src="/js/exception/exception.js"></script>
+    <script src="/js/layout/shell.js"></script>
+    <script src="/js/logger/logger.js"></script>
+    <script src="/js/promise/DataParams.js"></script>
+    <script src="/js/promise/DataQuery.js"></script>
+    <script src="/js/promise-request/withParams.js"></script>
+    <script src="/js/promise-request/withQuery.js"></script>
+    <script src="/js/router/routerhelper.js"></script>
+    <script src="/js/services/authInterceptor.js"></script>
+    <script src="/js/services/authToken.js"></script>
+    <script src="/js/services/gravatarCached.js"></script>
+    <script src="/js/services/strapAlert.js"></script>
+    <script src="/js/services/strapModal.js"></script>
+    <script src="/js/test-helpers/bind-polyfill.js"></script>
+    <script src="/js/widgets/switches.js"></script>
+    <script src="/js/widgets/confirm.password.js"></script>
+    <script src="/js/services/api/user.js"></script>
+    <script src="/js/routes/client/main/config.route.js"></script>
+    <script src="/js/routes/client/main/main.js"></script>
+    <script src="/js/routes/client/stripe/config.route.js"></script>
+    <script src="/js/routes/client/stripe/stripe.js"></script>
+    <script src="/js/routes/client/user.login/login.js"></script>
+    <script src="/js/routes/client/user.signup/signup.js"></script>
+    <!-- endinject -->
+
+    <!-- inject:templates:js -->
+    <!-- endinject -->
+    <!-- endbuild -->
+  </body>
+</html>
