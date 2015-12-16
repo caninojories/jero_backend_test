@@ -44,8 +44,8 @@
     url               : require('url'),
     _                 : require('underscore'),
 
-    port              : process.env.PORT || 3000,
-    environment       : process.env.NODE_ENV || 'development',
+    port              : process.env.PORT || 3003,
+    environment       : 'development',
 
     faviconPath       : rootPath + 'front-end/resources/favicon.ico',
     nunjucksPath      : path.join(rootPath, 'front-end/views'),
